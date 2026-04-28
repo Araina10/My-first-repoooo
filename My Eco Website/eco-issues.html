@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eco Issues - ECOMENDERS</title>
+  <link rel="stylesheet" href="eco-issues.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar-header">
+  <h1>ECOMENDERS♻️</h1>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="eco-issues.html">ECO ISSUES</a></li>
+      <li><a href="3R.html">3R'S</a></li>
+      <li><a href="tips.html">TIPS</a></li>
+    </ul>
+    <input list="pages" id="searchInput" placeholder="Search..." class="search-bar">
+    <datalist id="pages">
+      <option value="Home">
+      <option value="Eco Issues">
+      <option value="3R'S">
+      <option value="Tips">
+    </datalist>
+  </nav>
+</header>
+
+<!-- HERO IMAGE -->
+<section class="eco-hero">
+    <img src="https://media.proprofs.com/images/QM/user_images/2503852/-Global-Warming-(2).webp" alt="New Zealand Environment" class="eco-hero-img">
+  <div class="eco-hero-text">
+    <h1>Environmental Issues in New Zealand</h1>
+    <p>Protecting our land, water, and future</p>
+  </div>
+</section>
+
+<!-- INTRO TEXT -->
+<p class="eco-intro">
+  New Zealand is known for its natural beauty, but it still faces serious environmental challenges that affect ecosystems, wildlife, and communities.
+</p>
+
+<section class="eco-container">
+
+  <!-- Climate -->
+  <div class="eco-card fade-in">
+    <h2>🌍Climate Change</h2>
+
+    <h3>What it is</h3>
+    <p>Climate change is the long-term warming of the Earth caused by gases released into the atmosphere.</p>
+
+    <h3>What's happening in NZ</h3>
+    <p>In New Zealand, climate change is influenced by transport, energy use, and agriculture.</p>
+
+    <h3>Why it matters</h3>
+    <p>It affects ecosystems, biodiversity, and communities.</p>
+  </div>
+
+  <!-- Water -->
+  <div class="eco-card fade-in">
+    <h2>💧Water Pollution</h2>
+
+    <h3>What it is</h3>
+    <p>Water pollution occurs when harmful substances contaminate rivers and oceans.</p>
+
+    <h3>What's happening in NZ</h3>
+    <p>Often caused by agricultural runoff and waste entering waterways.</p>
+
+    <h3>Why it matters</h3>
+    <p>It harms aquatic life and affects human health.</p>
+  </div>
+
+  <!-- Air -->
+  <div class="eco-card fade-in">
+    <h2>🌫️Air Pollution</h2>
+
+    <h3>What it is</h3>
+    <p>Air pollution is harmful gases and particles in the air.</p>
+
+    <h3>What's happening in NZ</h3>
+    <p>Mainly caused by vehicles and burning fuels.</p>
+
+    <h3>Why it matters</h3>
+    <p>It causes breathing problems and health issues.</p>
+  </div>
+
+  <!-- Waste -->
+  <div class="eco-card fade-in">
+    <h2>♻️Waste and Plastic Pollution</h2>
+
+    <h3>What it is</h3>
+    <p>Plastic pollution is the buildup of waste in the environment.</p>
+
+    <h3>What's happening in NZ</h3>
+    <p>Large amounts end up in landfills and oceans.</p>
+
+    <h3>Why it matters</h3>
+    <p>It harms wildlife and ecosystems.</p>
+  </div>
+
+</section>
+
+<!-- SEARCH BAR SCRIPT -->
+<script>
+const searchInput = document.getElementById('searchInput');
+
+searchInput.addEventListener('input', function() {
+    const value = this.value.toLowerCase().trim();
+
+    if(value === "home") {
+    window.location.href = "index.html";
+    } else if(value === "eco issues") {
+        window.location.href = "eco-issues.html";
+    } else if(value === "3r's") {
+        window.location.href = "3R.html";
+    } else if(value === "tips") {
+        window.location.href = "tips.html";
+    }
+});
+</script>
+
+</body>
+</html>
+
